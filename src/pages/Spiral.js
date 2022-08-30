@@ -37,7 +37,6 @@ const spiral = (props) => {
         p5.specularMaterial(250)
         p5.shininess(200)
         p5.push()
-        
        
         p5.pop()
 
