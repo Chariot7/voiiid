@@ -4,7 +4,10 @@ import screen1 from '../Assets/stanby1.png'
 import screen2 from '../Assets/stanby2.png'
 import screen3 from '../Assets/stanby3.png'
 
+
 const home = function(){
+    document.body.style.overflow='auto'
+    console.log(document.body.style.overflow)
     return (
     <>
     <div style={{

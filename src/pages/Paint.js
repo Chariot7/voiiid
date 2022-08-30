@@ -1,11 +1,12 @@
 import React from "react";
 import Sketch from "react-p5";
 
+console.log(document.body.style.overflow)
     let angle = 0;
     let rectSize = 6;
     const {innerWidth, innerHeight} = window;
 const paint = (props) => {
-    
+  document.body.style.overflow='hidden'
   const windowResized = (p5) => {
     p5.resizeCanvas(p5.windowWidth, p5.windowHeight)
   }

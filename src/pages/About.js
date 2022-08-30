@@ -6,6 +6,7 @@ let y;
 const {innerWidth, innerHeight} = window;
 
 const about = (props) => {
+    document.body.style.overflow='hidden'
 	const windowResized = (p5) => {
         p5.resizeCanvas(p5.windowWidth, p5.windowHeight)
     }

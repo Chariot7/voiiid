@@ -1,5 +1,6 @@
 import Sketch from "react-p5";
 
+
 let angleX = 0;
 let angleY = 0;
 let num;
@@ -9,7 +10,7 @@ const {innerWidth, innerHeight} = window;
 window.localStorage.clear();
 
 const spiral = (props) => {
-    
+    document.body.style.overflow='hidden'
     const windowResized = (p5) => {
         p5.resizeCanvas(p5.windowWidth, p5.windowHeight)
     }
