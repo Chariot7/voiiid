@@ -11,8 +11,6 @@ const about = (props) => {
     }
     
     const setup = (p5, canvasParentRef) => {
-		// use parent to render the canvas in this ref
-		// (without that p5 will render the canvas outside of your component)
 		p5.createCanvas(innerWidth, innerHeight, p5.WEBGL).parent(canvasParentRef);
         p5.rectMode(p5.CENTER)
         p5.frameRate(15)
@@ -33,12 +31,10 @@ const about = (props) => {
                 p5.stroke(143, 22, 8)
                 p5.fill(230, 180, 50, 150)
                 negNum = -1
-                // p5.scale(1,-1)
             } else {
                 p5.fill(100, 220, 10, 150)
                 p5.stroke(70, 200, 10)
                 negNum = 1
-                // p5.scale(1,-1)
 
             }
             p5.translate(x*shapeSize + shapeSize/2 + x*spacingX, y*shapeSize+ shapeSize/2 + y*spacingY, -y*250 )
@@ -46,7 +42,6 @@ const about = (props) => {
             p5.rotateY(p5.mouseX)
             p5.strokeWeight(3)
             let boxDims = p5.mouseX*.6
-            // p5.mouseX > 45?  p5.mouseX/6 -10 : 1 ;
             p5.box(boxDims, p5.mouseY/6, )
             p5.pop()
             }

@@ -16,7 +16,6 @@ const home = function(){
     }}>
             <div
             style={{
-                // border: '2px solid black',
                 height: "8%",
                 minWidth: '400px',
                 minHeight: '40px',
@@ -42,7 +41,6 @@ const home = function(){
                 </h5>
             </div>
         <div style={{
-            // border: '1px solid black',
             height: "84vh",
             margin: "auto",
             position: "relative",
@@ -72,14 +70,12 @@ const home = function(){
     </div>
     <div
     style={{
-        // border: '1px solid black',
         height: "93vh",
         margin: "auto",
         marginTop: "7vh",
         position: "relative",
         aspectRatio: 'auto 16/10'}}>
             <div style={{
-                // border: '1px solid black',
                 width: "30%",
                 aspectRatio: 'auto 4/7',
                 top: "4%",
@@ -92,7 +88,6 @@ const home = function(){
                 }}/>
             </div>
             <div style={{
-                // border: '1px solid black',
                 width: "30%",
                 aspectRatio: 'auto 4/7',
                 top: "4%",
@@ -105,7 +100,6 @@ const home = function(){
                 }}/>
             </div>
             <div style={{
-                // border: '1px solid black',
                 width: "30%",
                 aspectRatio: 'auto 4/7',
                 top: "4%",

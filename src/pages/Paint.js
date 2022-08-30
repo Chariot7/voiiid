@@ -10,10 +10,6 @@ const paint = (props) => {
     p5.resizeCanvas(p5.windowWidth, p5.windowHeight)
   }
 	const setup = (p5, canvasParentRef) => {
-        
-       
-		// use parent to render the canvas in this ref
-		// (without that p5 will render the canvas outside of your component)
 		p5.createCanvas(innerWidth, innerHeight, p5.WEBGL).parent(canvasParentRef);
         p5.background(250);
         p5.frameRate(50);
@@ -49,14 +45,10 @@ const paint = (props) => {
             p5.pop()
           }
       
-          
         }
-        
         
         angle += .02
         
-        
-    
 	};
 
 	return <Sketch setup={setup} draw={draw} windowResized={windowResized} 

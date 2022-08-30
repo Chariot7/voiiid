@@ -15,8 +15,6 @@ const spiral = (props) => {
     }
 
 	const setup = (p5, canvasParentRef) => {
-		// use parent to render the canvas in this ref
-		// (without that p5 will render the canvas outside of your component)
 		p5.createCanvas(innerWidth, innerHeight, p5.WEBGL).parent(canvasParentRef);
         p5.resizeCanvas(p5.windowWidth, p5.windowHeight)
         p5.noStroke();
