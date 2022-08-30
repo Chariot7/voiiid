@@ -10,6 +10,18 @@ body {
   text-align: center;
 }
 
+h2 {
+  font-family: Avenir;
+  color: rgb(45, 45, 45);
+  margin-top: 1%;
+  margin-bottom: 0%;
+}
+
+h5 {
+  font-family: Avenir;
+  color: rgb(45, 45, 45);
+  margin-top: 0;
+}
 
 .nav {
   background-color: white;
@@ -18,7 +30,11 @@ body {
   align-items: center;
   gap: 2rem;
   padding: 0 1rem;
+  color: rgb(45, 45, 45);
   font-family: Avenir;
+  position: sticky;
+  top:0;
+  z-index: 100;
 }
 
 
@@ -36,14 +52,19 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  padding: .25rem;
+  padding: .3rem .2rem .05rem .2rem;
 }
 
-.nav li.active {
-  background-color: #555;
+.nav li{
+  border-bottom: 3px solid white;
 }
 
 .nav li:hover {
-  background-color: #777;
+  transform: translate(0, -1.5px) scale(1.1);
 }
+.nav li.active {
+  border-bottom: 3px solid #e72f01f5;
+  transform: none;
+}
+
 

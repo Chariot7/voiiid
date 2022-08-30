@@ -6,9 +6,9 @@ export default function navbar(){
     return <nav className= 'nav' >
         <Link to='/' className='site-title'>VOiiiD</Link>
         <ul>
-            <CustomLink to="/paint">Paint</CustomLink>
-            <CustomLink to="/about">Death</CustomLink>
-            <CustomLink to="/spiral">Spiral</CustomLink>
+            <CustomLink to="/paint">Color</CustomLink>
+            <CustomLink to="/about">Move</CustomLink>
+            <CustomLink to="/spiral">Twist</CustomLink>
         </ul>
     </nav>
 }
