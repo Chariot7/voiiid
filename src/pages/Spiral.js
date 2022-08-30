@@ -63,7 +63,6 @@ const spiral = (props) => {
             
             p5.pop()
         }
-
             };
 
 
