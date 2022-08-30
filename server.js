@@ -1,18 +1,12 @@
 const path = require('path');
 const express = require('express');
+import sslRedirect from 'heroku-ssl-redirect';
 const app = express();
 const publicPath = path.join(__dirname, '..','public');
 const port = process.env.PORT || 3000;
 app.use(express.static(publicPath));
 
-app.use((req, res, next) => {
-    if (req.header('x-forwarded-proto') !== 'https'){
-        res.redirect(`https://${req.header('host')}${req.url}`)
-        console.log('hitting')
-    }
-    else
-    next()
-})
+app.use(sslRedirect());
   
 app.get('*', (req, res) => {
    res.sendFile(path.join(publicPath, 'index.html'));
