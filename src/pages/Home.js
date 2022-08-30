@@ -22,15 +22,15 @@ const home = function(){
                 left:'7%',
                 
             }}>
-                <h2 
+                <h1 
                     style={{
                         left: '7%',
                         position: 'relative',
                         textAlign: 'left'
                     }}>
                     LG - Frieze, New York
-                </h2>
-                <h5
+                </h1>
+                <h4
                     style={{
                         left: '7%',
                         top: '2%',
@@ -38,7 +38,7 @@ const home = function(){
                         textAlign: 'left'
                     }}>
                         Designed & Built: Adobe XD, HTML, CSS, React, Heroku
-                </h5>
+                </h4>
             </div>
         <div style={{
             height: "84vh",
@@ -52,7 +52,7 @@ const home = function(){
                 className="image"
                 style={{ height: '65%',
                 left: '7%',
-                top: '14%',
+                top: '9%',
                 position: 'absolute',
                 
                 }}/>
@@ -61,7 +61,7 @@ const home = function(){
                 className="image"
                 style={{ height: '65%',
                 right: '7%',
-                top: '14%',
+                top: '9%',
                 position: 'absolute',
                 borderRadius:'0.75%',
                 filter: 'drop-shadow(0 0 0.45rem #C8C8C8)',
