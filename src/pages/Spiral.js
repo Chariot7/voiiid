@@ -46,7 +46,6 @@ const spiral = (props) => {
             
                 let boxSize = p5.height * 0.925 /2
                 p5.scale(p5.mouseX/800, p5.mouseY/1200)
-                p5.sphere(sphere)
                 p5.box(boxSize+p5.mouseX/3, boxSize + p5.mouseY/6, boxSize,200,200)
                 p5.push()
                 

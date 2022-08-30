@@ -4,9 +4,11 @@
 
 body {
   margin: 0;
-  overflow: hidden;
 }
 
+canvas {
+  overflow: none;
+}
 .container {
   text-align: center;
 }
