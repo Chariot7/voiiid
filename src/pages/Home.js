@@ -4,8 +4,7 @@ import screen1 from '../Assets/stanby1.png'
 import screen2 from '../Assets/stanby2.png'
 import screen3 from '../Assets/stanby3.png'
 
-const {innerWidth, innerHeight} = window;
-export default function(){
+const home = function(){
     return (
     <>
     <div style={{
@@ -88,7 +87,7 @@ export default function(){
                 position: 'absolute',
                 filter: 'drop-shadow(0 0 0.35rem #C8C8C8)',
             }}>
-                <img src={screen1}style={{
+                <img src={screen1} alt='' style={{
                     height: "100%",
                 }}/>
             </div>
@@ -101,7 +100,7 @@ export default function(){
                 position: 'absolute',
                 filter: 'drop-shadow(0 0 0.35rem #C8C8C8)'
             }}>
-                <img src={screen2}style={{
+                <img src={screen2} alt='' style={{
                     height: "100%",
                 }}/>
             </div>
@@ -114,7 +113,7 @@ export default function(){
                 position: 'absolute',
                 filter: 'drop-shadow(0 0 0.35rem #C8C8C8)'
             }}>
-                <img src={screen3} style={{
+                <img src={screen3} alt='' style={{
                     height: "100%",
                 }}/>
             </div>
@@ -123,3 +122,4 @@ export default function(){
     </>
     )
 }
+export default home;

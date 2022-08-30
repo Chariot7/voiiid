@@ -4,7 +4,7 @@ import Sketch from "react-p5";
     let angle = 0;
     let rectSize = 6;
     const {innerWidth, innerHeight} = window;
-export default (props) => {
+const paint = (props) => {
     
   const windowResized = (p5) => {
     p5.resizeCanvas(p5.windowWidth, p5.windowHeight)
@@ -62,3 +62,5 @@ export default (props) => {
 	return <Sketch setup={setup} draw={draw} windowResized={windowResized} 
     />;
 };
+
+export default paint;

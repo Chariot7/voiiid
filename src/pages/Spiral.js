@@ -8,7 +8,7 @@ let sphere;
 const {innerWidth, innerHeight} = window;
 window.localStorage.clear();
 
-export default (props) => {
+const spiral = (props) => {
     
     const windowResized = (p5) => {
         p5.resizeCanvas(p5.windowWidth, p5.windowHeight)
@@ -71,3 +71,4 @@ export default (props) => {
 
 	return <Sketch setup={setup} draw={draw} windowResized={windowResized} />;
 };
+export default spiral
