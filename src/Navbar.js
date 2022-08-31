@@ -11,11 +11,19 @@ export default function navbar(){
             </svg>
             </CustomLink>
             <CustomLink to="/paint">
-                <div className="circle">
-                </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="20" height="20">
+                <circle cx="20" cy="20" r="18" />
+            </svg>
             </CustomLink>
             <CustomLink to="/spiral">
-            <div className="square"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+                <rect width="20"
+                height="20"
+                x="0"
+                y="0"
+                 />
+            </svg>
+
             </CustomLink>
         </ul>
     </nav>
