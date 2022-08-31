@@ -3,19 +3,27 @@ import img2 from '../Assets/StanbyME.png'
 import screen1 from '../Assets/stanby1.png'
 import screen2 from '../Assets/stanby2.png'
 import screen3 from '../Assets/stanby3.png'
+import Radium, { StyleRoot } from 'radium';
+
 
 
 const home = function(){
+    const style = {
+        '@media (max-width: 500px)': {
+            display: 'none',
+        },
+    }
     document.body.style.overflow='auto'
     console.log(document.body.style.overflow)
     return (
-    <>
+    <StyleRoot>
     <div style={{
         height: "84vh",
         margin: "auto",
         position: "relative",
         aspectRatio: 'auto 16/9',
         minHeight: '150px',
+        
     }}>
             <div
             style={{
@@ -57,7 +65,9 @@ const home = function(){
                 left: '7%',
                 top: '9%',
                 position: 'absolute',
-                
+                '@media (max-width: 500px)': {
+                    width: '85%',
+                },
                 }}/>
             <img src={img}
                 alt="artwork"
@@ -116,7 +126,7 @@ const home = function(){
             </div>
 
     </div>
-    </>
+    </StyleRoot>
     )
 }
-export default home;
+export default Radium(home);

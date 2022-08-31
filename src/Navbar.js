@@ -6,8 +6,8 @@ export default function navbar(){
         <CustomLink to='/' className='site-title'>VOiiiD</CustomLink>
         <ul>
             <CustomLink to="/about">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 60 52" width="21" height="18">
-                <polygon points="30,0 60,52 0,52" />
+                <svg className='triangle' xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 33 29" width="21" height="18">
+                <polygon points="17,2 32,28 2,28" />
             </svg>
             </CustomLink>
             <CustomLink to="/paint">

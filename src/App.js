@@ -4,12 +4,13 @@ import About from './pages/About'
 import Home from './pages/Home'
 import Spiral from './pages/Spiral'
 import {Route, Routes} from "react-router-dom"
+import Radium, { StyleRoot } from 'radium';
 
 
 function App() {
   
   return (
-    <>
+    <StyleRoot>
     <Navbar />
     <div className='container'>
       <Routes>
@@ -19,8 +20,8 @@ function App() {
         <Route path="/spiral" element={<Spiral/>}/>
       </Routes>
     </div>
-    </>
+    </StyleRoot>
   );
 }
 
-export default App;
+export default Radium(App);
