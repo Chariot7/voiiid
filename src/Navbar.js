@@ -1,14 +1,22 @@
 import {Link, useMatch, useResolvedPath } from 'react-router-dom';
 
-
 export default function navbar(){
 
     return <nav className= 'nav' >
-        <Link to='/' className='site-title'>VOiiiD</Link>
+        <CustomLink to='/' className='site-title'>VOiiiD</CustomLink>
         <ul>
-            <CustomLink to="/paint">Color</CustomLink>
-            <CustomLink to="/about">Move</CustomLink>
-            <CustomLink to="/spiral">Twist</CustomLink>
+            <CustomLink to="/about">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 60 52" width="21" height="18">
+                <polygon points="30,0 60,52 0,52" />
+            </svg>
+            </CustomLink>
+            <CustomLink to="/paint">
+                <div className="circle">
+                </div>
+            </CustomLink>
+            <CustomLink to="/spiral">
+            <div className="square"></div>
+            </CustomLink>
         </ul>
     </nav>
 }

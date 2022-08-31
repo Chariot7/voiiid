@@ -13,6 +13,21 @@ canvas {
   text-align: center;
 }
 
+.circle {
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.square {
+  height: 1.15rem;
+  width: 1.15rem;
+  background-color: grey;
+}
+
+
+
 h1 {
   font-family: Avenir;
   color: rgb(45, 45, 45);
@@ -63,14 +78,101 @@ h4 {
 
 .nav li{
   border-bottom: 3px solid white;
+  list-style: none;
+}
+.nav li svg{
+  fill: none;
+  stroke-width: 2;
+  stroke: black;
 }
 
 .nav li:hover {
-  transform: translate(0, -1.5px) scale(1.1);
+  cursor: pointer;
+}
+
+.nav li:hover div.circle{
+  animation-name: spinCircle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.nav li:hover div.square{
+  animation-name: spin;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  
 }
 .nav li.active {
   border-bottom: 3px solid #e72f01f5;
   transform: none;
 }
 
+.nav li.active div {
+  animation-name: colorChange;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.nav li.active svg {
+  animation-name: colorChangeSVG;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorChange {
+  0%   { background-color:rgb(206, 5, 41); }
+  25%  { background-color:rgb(181, 157, 1);}
+  50% { background-color:rgb(4, 142, 55);}
+  75% { background-color:rgb(55, 4, 142);}
+  100% { background-color:rgb(206, 5, 41);}
+}
+
+@keyframes colorChangeSVG {
+  0%   { fill:rgb(206, 5, 41); }
+  25%  { fill:rgb(181, 157, 1);}
+  50% { fill:rgb(4, 142, 55);}
+  75% { fill:rgb(55, 4, 142);}
+  100% { fill:rgb(206, 5, 41);}
+}
+
+
+.nav li:hover svg{
+  /* transform: scale(0.85); */
+  transform-origin: 50% 68%;
+  animation-name: spin3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  cursor: pointer;
+}
+
+@keyframes example2 {
+  0%   {border-bottom: 1.2rem solid red; }
+  25%  {border-bottom: 1.2rem solid yellow; }
+  50%  {border-bottom: 1.2rem solid blue; }
+  75%  {border-bottom: 1.2rem solid green; }
+  100% {border-bottom: 1.2rem solid red; }
+}
+
+@keyframes spin {
+  0%   {transform:  rotate(0turn); background-color:rgb(206, 5, 41); }
+  25%  {transform: rotate(.25turn); background-color:rgb(181, 157, 1);}
+  50% {transform: rotate(.5turn); background-color:rgb(4, 142, 55);}
+  75% {transform: rotate(.75turn); background-color:rgb(55, 4, 142);}
+  100% {transform: rotate(1turn); background-color:rgb(206, 5, 41);}
+}
+
+@keyframes spinCircle {
+  0%   {transform:  rotateX(0turn); background-color:rgb(206, 5, 41); }
+  25%  {transform: rotateX(.25turn); background-color:rgb(181, 157, 1);}
+  50% {transform: rotateX(.5turn); background-color:rgb(4, 142, 55);}
+  75% {transform: rotateX(.75turn); background-color:rgb(55, 4, 142);}
+  100% {transform: rotateX(1turn); background-color:rgb(206, 5, 41);}
+}
+@keyframes spin3 {
+  0%   {transform:  rotateY(0turn); fill:rgb(206, 5, 41); }
+  25%  {transform: rotateY(.25turn); fill:rgb(181, 157, 1);}
+  50% {transform: rotateY(.5turn); fill:rgb(4, 142, 55);}
+  75% {transform: rotateY(.75turn); fill:rgb(55, 4, 142);}
+  100% {transform: rotateY(1turn); fill:rgb(206, 5, 41);}
+}
 
