@@ -44,8 +44,8 @@ const spiral = (props) => {
         // console.log(p5.mouseX/2000, p5.mouseY/2000)
         let mouseX = p5.mouseX
         let mouseY = p5.mouseY
-        let numX = p5.map(mouseX/2000, 0, 1.4, 0.6, 0.8)
-        let numY = p5.map(mouseY/2000, 0, 1.4, 0.6, 0.8)
+        let numX = p5.map(mouseX/2000, 0, 1.4, 0.2, 0.3)
+        let numY = p5.map(mouseY/2000, 0, 1.4, 0.2, 0.3)
         for(let i = 0 ; i < num * 12; i += 2*num){
             p5.push()
             p5.rotateX(angleArrX[i/num] )
@@ -53,14 +53,14 @@ const spiral = (props) => {
             
             p5.scale(numX, numY)
                 let boxSize = (p5.height * 0.925 /2) - p5.width/80
-                p5.box(boxSize+mouseX/2, boxSize + mouseY/3, boxSize/2,200,200)
+                p5.box(boxSize+mouseX/2 - 10, boxSize + mouseY/3 - 10, boxSize/2 - 10,200,200)
                 p5.push()
                 
                 p5.rotateX(angleArrX[i/num] * -1)
                 p5.rotateY(angleArrX[i/num + 1] * -1)
                 p5.stroke(4,200,200)
                 
-                p5.box(boxSize+mouseX/2 , boxSize + mouseY/3 , boxSize/2,200,200)
+                p5.box(boxSize+mouseX/2 - 10 , boxSize - 10 + mouseY/3 , boxSize/2 - 10,200,200)
                 p5.pop()
             
             p5.pop()
