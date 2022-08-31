@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    
+}
+body {
+    display: block;
+}
+
+div.page {
+    min-width: 1000px;
+    max-width: 1600px;
+    /* border: 2px solid black; */
+    margin: auto;
+}
+   
+[class*="col-"] {
+    float: left;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.col-3 {
+    /* height: 76vh; */
+    width: 248px;
+    height: 80vh;
+    /* border: 2px dotted black; */
+} 
+.col-8  {
+    /* height: 76vh; */
+    width: 1346px;
+    /* border: 2px dotted black; */
+    padding-left: 264px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
