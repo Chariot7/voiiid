@@ -12,11 +12,12 @@ div.page {
     border: 2px solid black;
     margin: auto;
     border: 4px solid transparent;
+    height: 100vh;
 }
    
 
 .col-3 {
-    height: calc(91vh - 48vw - 220px);
+    height: calc(100% - 48vw - 150px);
     margin: auto;
     bottom: 5vh;
 } 
