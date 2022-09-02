@@ -21,21 +21,29 @@ div.page {
 
 .col-3 {
     /* border: 2px dotted black; */
-    width: min(240px, 40%);
+    /* width: min(240px, 45%); */
+    height: calc(91vh - 48vw - 101px);
     margin: auto;
+    bottom: 5vh;
+    /* position: absolute; */
 } 
 .col-8  {
     /* border: 2px dotted black; */
-    width: min(800px, 96%);
+    width: min(800px, 96vw);
     margin:auto;
-    padding-top: 1.7rem;
+    padding-top: 3vh;
 }
 
 img {
     display: block;
-    width: 100%;
+    /* width: 100%; */
+    height: 100%;
+    margin: auto;
 }
-
+/* img.screen {
+    height: 30%;
+} */
 img.booth {
     border-radius: 0.7em;
+    width: 100%;
 }

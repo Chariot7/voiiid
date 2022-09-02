@@ -17,14 +17,14 @@ canvas {
 h2 {
   font-family: Avenir;
   color: rgb(45, 45, 45);
-  margin-top: 4%;
+  margin-top: 1.5vh;
   margin-bottom: 0%;
 }
 
 h5 {
   font-family: Avenir;
   color: rgb(45, 45, 45);
-  margin-top: 0;
+  margin: 0 0 3vh 0;
 }
 
 .nav {

@@ -1,4 +1,4 @@
-import img from "../../Assets/LG_Frieze_Wide.png";
+import img from "../../Assets/LG_Frieze_Booth.png";
 import img2 from "../../Assets/StanbyME.png";
 import "./home.css";
 
