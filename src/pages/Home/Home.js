@@ -1,8 +1,5 @@
-import img from "../../Assets/Frieze.png";
+import img from "../../Assets/LG_Frieze_Wide.png";
 import img2 from "../../Assets/StanbyME.png";
-import screen1 from "../../Assets/stanby1.png";
-import screen2 from "../../Assets/stanby2.png";
-import screen3 from "../../Assets/stanby3.png";
 import "./home.css";
 
 const home = function () {
@@ -10,20 +7,15 @@ const home = function () {
   return (
     <>
       <div className="page">
-        <h1>LG - Frieze, New York</h1>
-        <h4>Designed & Built</h4>
+        <h2>LG - Frieze, New York</h2>
+        <h5>StanbyME Web App : Design & Build</h5>
         <div className="col-3">
-          <img src={img2} alt="artwork" className="image" />
+          <img src={img2} alt="artwork" className="screen" />
         </div>
         <div className="col-8">
-          <img src={img} alt="artwork" className="image" />
+          <img src={img} alt="artwork" className="booth" />
         </div>
 
-        <img src={screen1} alt="" />
-
-        <img src={screen2} alt="" />
-
-        <img src={screen3} alt="" />
       </div>
     </>
   );
