@@ -59,7 +59,7 @@ h5 {
   height: 100%;
   display: flex;
   align-items: center;
-  padding: .8rem 0.4rem .8rem 0.8rem;
+  padding: .8rem 0.5rem .8rem 0.6rem;
   transform: scale(1.75);
 }
 
@@ -69,7 +69,7 @@ h5 {
   font-weight: 10;
 }
 
-.nav a.spiral {
+.nav a.square {
   padding: .8rem 0.7rem .775rem 1rem;
 }
 

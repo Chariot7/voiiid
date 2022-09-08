@@ -1,8 +1,8 @@
 import Navbar from "./Navbar";
-import Paint from "./pages/Paint";
-import About from "./pages/About";
+import Circle from "./pages/Circle";
+import Triangle from "./pages/Triangle";
 import Home from "./pages/Home/Home";
-import Spiral from "./pages/Spiral";
+import Square from "./pages/Square";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -12,9 +12,9 @@ function App() {
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/triangle" element={<About />} />
-          <Route path="/circle" element={<Paint />} />
-          <Route path="/square" element={<Spiral />} />
+          <Route path="/triangle" element={<Triangle />} />
+          <Route path="/circle" element={<Circle />} />
+          <Route path="/square" element={<Square />} />
         </Routes>
       </div>
     </>

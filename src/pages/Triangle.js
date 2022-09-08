@@ -5,7 +5,7 @@ let x;
 let y;
 const { innerWidth, innerHeight } = window;
 
-const about = (props) => {
+const triangle = (props) => {
   document.body.style.overflow = "hidden";
   const windowResized = (p5) => {
     p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
@@ -56,4 +56,4 @@ const about = (props) => {
 
   return <Sketch setup={setup} draw={draw} windowResized={windowResized} />;
 };
-export default about;
+export default triangle;

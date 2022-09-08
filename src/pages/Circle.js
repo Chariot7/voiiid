@@ -5,7 +5,8 @@ console.log(document.body.style.overflow);
 let angle = 0;
 let rectSize = 6;
 const { innerWidth, innerHeight } = window;
-const paint = (props) => {
+
+const circle = (props) => {
   document.body.style.overflow = "hidden";
   const windowResized = (p5) => {
     p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
@@ -54,4 +55,4 @@ const paint = (props) => {
   return <Sketch setup={setup} draw={draw} windowResized={windowResized} />;
 };
 
-export default paint;
+export default circle;

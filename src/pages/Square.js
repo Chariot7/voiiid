@@ -8,7 +8,7 @@ let sphere;
 const { innerWidth, innerHeight } = window;
 window.localStorage.clear();
 
-const spiral = (props) => {
+const square = (props) => {
   document.body.style.overflow = "hidden";
   const windowResized = (p5) => {
     p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
@@ -105,11 +105,10 @@ const spiral = (props) => {
         200
       );
       p5.pop();
-
       p5.pop();
     }
   };
 
   return <Sketch setup={setup} draw={draw} windowResized={windowResized} />;
 };
-export default spiral;
+export default square;
