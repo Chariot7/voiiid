@@ -17,12 +17,12 @@ div.page {
    
 
 .col-3 {
-    height: min(calc(100% - min(500px, 96vw) - 120px), 500px);
+    height: min(calc(100% - min(500px, 96vw) - 50px), 500px);
     margin: auto;
     bottom: 5vh;
 } 
 .col-8  {
-    width: min(500px, 96vw);
+    width: min(600px, 96vw);
     margin:auto;
     padding-top: 3vh;
 }
