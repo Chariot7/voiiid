@@ -3,6 +3,7 @@ import Circle from "./pages/Circle";
 import Triangle from "./pages/Triangle";
 import Home from "./pages/Home/Home";
 import Square from "./pages/Square";
+import Portfolio from "./pages/Portfolio";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/triangle" element={<Triangle />} />
           <Route path="/circle" element={<Circle />} />
           <Route path="/square" element={<Square />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
       </div>
     </>

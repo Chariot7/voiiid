@@ -1,5 +1,8 @@
 import img from "../../Assets/LG_Frieze_Booth.png";
 import img2 from "../../Assets/StanbyME.png";
+import img3 from "../../Assets/LG.png";
+import img4 from "../../Assets/LG2.png";
+import img5 from "../../Assets/LG3.png";
 import "./home.css";
 
 const home = function () {
@@ -17,6 +20,15 @@ const home = function () {
         </div>
         <div className="col-8">
           <img src={img} alt="artwork" className="booth" />
+        </div>
+        <div className="col-8">
+          <img src={img3} alt="artwork" className="booth" />
+        </div>
+        <div className="col-8">
+          <img src={img4} alt="artwork" className="booth" />
+        </div>
+        <div className="col-8">
+          <img src={img5} alt="artwork" className="booth" />
         </div>
       </div>
     </>
