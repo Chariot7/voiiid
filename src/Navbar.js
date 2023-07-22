@@ -11,11 +11,11 @@ export default function navbar() {
           <svg
             className="circle"
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 40 40"
-            width="21"
-            height="21"
+            viewBox="0 0 44 44"
+            width="22"
+            height="22"
           >
-            <circle cx="20" cy="20" r="18" />
+            <circle cx="21" cy="22.8" r="20" />
           </svg>
         </CustomLink>
       <CustomLink to="/square">
