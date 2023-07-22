@@ -38,7 +38,7 @@ export default function navbar() {
             height="22"
           >
             <rect width="8" height="9" x="2" y="1" />
-            <rect width="8" height="9" x="10" y="10" />
+            <rect width="8" height="9.4" x="10" y="10" />
           </svg>
         </CustomLink>
         <CustomLink to="/triangle">

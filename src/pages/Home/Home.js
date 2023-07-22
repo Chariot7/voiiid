@@ -7,15 +7,15 @@ const home = function () {
   element[0] ? (element = element[0].offsetHeight) : (element = element[0]);
   return (
     <>
-      <ReactPlayer url= 'https://youtu.be/iSFIGF3dtgA' muted={true} playing={true} loop={true} height="32vh" width='100vw' style={{
+      <ReactPlayer url= 'https://vimeo.com/847634102?share=copy' muted={true} controls={false} playing={true} loop={true} height="31vh" width='100vw' style={{
             paddingBottom: '0px',
             margin: 'auto'
       }}/>
-      <ReactPlayer url= 'https://youtu.be/khPu9R58U64' muted={true} playing={true} loop={true} height="32vh" width='100vw' style={{
+      <ReactPlayer url= 'https://vimeo.com/847633283?share=copy' muted={true} controls={false} playing={true} loop={true} height="31vh" width='100vw' style={{
               paddingBottom: '0px',
               margin: 'auto'
       }}/>
-      <ReactPlayer url= 'https://youtu.be/i7FcBWhrEbY' muted={true} playing={true} loop={true} height="32vh" width='100vw' style={{
+      <ReactPlayer url= 'https://vimeo.com/847650942?share=copy' muted={true} controls={false} playing={true} loop={true} height="35vh" width='100vw' style={{
             paddingBottom: '0px',
             margin: 'auto'
       }}/>
