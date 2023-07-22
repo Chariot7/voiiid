@@ -8,15 +8,15 @@ const home = function () {
   return (
     <>
       <ReactPlayer url= 'https://youtu.be/iSFIGF3dtgA' playing={true} loop={true} height="400px" width='900px' style={{
-            paddingBottom: '8px',
+            paddingBottom: '0px',
             margin: 'auto'
       }}/>
       <ReactPlayer url= 'https://youtu.be/Eqd1rLVG1zc' playing={true} loop={true} height="400px" width='900px' style={{
-            paddingBottom: '8px',
+            paddingBottom: '0px',
             margin: 'auto'
       }}/>
       <ReactPlayer url= 'https://youtu.be/i7FcBWhrEbY' playing={true} loop={true} height="400px" width='900px' style={{
-            paddingBottom: '8px',
+            paddingBottom: '0px',
             margin: 'auto'
       }}/>
     </>
