@@ -14,6 +14,7 @@ const particles = (props) => {
     const setup =(p5, canvasParentRef) => {
         p5.createCanvas(innerWidth, innerHeight, p5.WEBGL).parent(canvasParentRef);
         p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
+        p5.background(5)
         p5.noStroke();
         p5.frameRate(15)
     }

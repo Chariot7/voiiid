@@ -7,7 +7,7 @@ const home = function () {
   element[0] ? (element = element[0].offsetHeight) : (element = element[0]);
   return (
     <>
-      {/* <ReactPlayer url= 'https://youtu.be/iSFIGF3dtgA' playing={true} loop={true} height="32vh" width='100vw' style={{
+      <ReactPlayer url= 'https://youtu.be/iSFIGF3dtgA' playing={true} loop={true} height="32vh" width='100vw' style={{
             paddingBottom: '0px',
             margin: 'auto'
       }}/>
@@ -18,7 +18,7 @@ const home = function () {
       <ReactPlayer url= 'https://youtu.be/khPu9R58U64' playing={true} loop={true} height="32vh" width='100vw' style={{
             paddingBottom: '0px',
             margin: 'auto'
-      }}/> */}
+      }}/>
     </>
   );
 };
