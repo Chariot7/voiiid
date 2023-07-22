@@ -1,6 +1,5 @@
-import img from "../../Assets/LG_Frieze_Booth.png";
-import img2 from "../../Assets/StanbyME.png";
 import "./home.css";
+import ReactPlayer from "react-player";
 
 const home = function () {
   document.body.style.overflow = "auto";
@@ -8,15 +7,18 @@ const home = function () {
   element[0] ? (element = element[0].offsetHeight) : (element = element[0]);
   return (
     <>
-      <div className="page">
-        <h2>LG - Frieze, New York (Website - UNDER CONSTRUCTION)</h2>
-        <div className="col-3">
-          <img src={img2} alt="artwork" className="screen" />
-        </div>
-        <div className="col-8">
-          <img src={img} alt="artwork" className="booth" />
-        </div>
-      </div>
+      <ReactPlayer url= 'https://youtu.be/iSFIGF3dtgA' playing={true} loop={true} height="400px" width='900px' style={{
+            paddingBottom: '8px',
+            margin: 'auto'
+      }}/>
+      <ReactPlayer url= 'https://youtu.be/Eqd1rLVG1zc' playing={true} loop={true} height="400px" width='900px' style={{
+            paddingBottom: '8px',
+            margin: 'auto'
+      }}/>
+      <ReactPlayer url= 'https://youtu.be/i7FcBWhrEbY' playing={true} loop={true} height="400px" width='900px' style={{
+            paddingBottom: '8px',
+            margin: 'auto'
+      }}/>
     </>
   );
 };

@@ -7,19 +7,7 @@ export default function navbar() {
         VOiiiD
       </CustomLink>
       <ul>
-        <CustomLink to="/triangle">
-          <svg
-            className="triangle"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            viewBox="0 0 34 29"
-            width="22"
-            height="21"
-          >
-            <polygon points="17,1 32,29 2,29" />
-          </svg>
-        </CustomLink>
-        <CustomLink to="/circle">
+      <CustomLink to="/circle">
           <svg
             className="circle"
             xmlns="http://www.w3.org/2000/svg"
@@ -30,17 +18,43 @@ export default function navbar() {
             <circle cx="20" cy="20" r="18" />
           </svg>
         </CustomLink>
-        <CustomLink to="/square">
+      <CustomLink to="/square">
           <svg
             className="square"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
-            width="20"
+            width="21"
             height="20"
           >
             <rect width="20" height="20" x="0" y="0" />
           </svg>
         </CustomLink>
+        <CustomLink to="/particles">
+          <svg
+            className="particles"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            width="20"
+            height="21"
+          >
+            <rect width="8" height="8" x="2" y="3" />
+            <rect width="8" height="8" x="10" y="11" />
+          </svg>
+        </CustomLink>
+        <CustomLink to="/triangle">
+          <svg
+            className="triangle"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            viewBox="0 0 34 29"
+            width="34"
+            height="21"
+          >
+            <rect width="30" height="5" x="-16" y="18" transform="rotate(-45)"/>
+          </svg>
+        </CustomLink>
+     
+        
       </ul>
     </nav>
   );
