@@ -71,6 +71,7 @@ h5 {
 
 .nav a.square {
   padding: .8rem 0.8rem .775rem .8rem;
+  stroke-width: 1;
 }
 
 .nav li{
@@ -86,6 +87,12 @@ h5 {
 .nav li svg.triangle{
   fill: none;
   stroke-width: 2.2;
+  stroke: black;
+}
+
+.nav li svg.circle{
+  fill: none;
+  stroke-width: 3.6;
   stroke: black;
 }
 

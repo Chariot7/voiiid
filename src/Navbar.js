@@ -15,7 +15,7 @@ export default function navbar() {
             width="22"
             height="22"
           >
-            <circle cx="21" cy="22.8" r="20" />
+            <circle cx="21.9" cy="22" r="20" />
           </svg>
         </CustomLink>
       <CustomLink to="/square">
