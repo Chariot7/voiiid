@@ -35,10 +35,10 @@ export default function navbar() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             width="20"
-            height="21"
+            height="22"
           >
-            <rect width="8" height="8" x="2" y="3" />
-            <rect width="8" height="8" x="10" y="11" />
+            <rect width="8" height="9" x="2" y="1" />
+            <rect width="8" height="9" x="10" y="10" />
           </svg>
         </CustomLink>
         <CustomLink to="/triangle">
