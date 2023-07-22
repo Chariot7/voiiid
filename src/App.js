@@ -1,10 +1,10 @@
-import Navbar from "./Navbar";
-import Circle from "./pages/Circle";
-import Triangle from "./pages/Triangle";
-import Home from "./pages/Home/Home";
-import Square from "./pages/Square";
-import Particlez from "./pages/Particlez";
-import { Route, Routes } from "react-router-dom";
+import Navbar from './Navbar';
+import Circle from './pages/Circle';
+import Triangle from './pages/Triangle';
+import Home from './pages/Home/Home';
+import Square from './pages/Square';
+import Particlez from './pages/Particlez';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
