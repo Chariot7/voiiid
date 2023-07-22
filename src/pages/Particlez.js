@@ -20,7 +20,7 @@ const particles = (props) => {
     }
 
     const draw = (p5) => {
-        p5.background(0)
+        p5.background(19)
         for (let i = 0; i < 2; i++) {
             let p = new Particle(p5);
             particleArr.push(p);
